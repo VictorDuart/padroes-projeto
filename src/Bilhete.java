@@ -3,12 +3,11 @@ public class Bilhete  {
     String classe;
 
     public Bilhete(String tipo){
-
         classe = tipo;
     }
 
     public boolean isPrimeiraClasse(){
-        if(this.classe == "primeira"){
+        if(this.classe.equals("primeira")){
             return true;
         }else{
             return false;
@@ -16,7 +15,7 @@ public class Bilhete  {
     }
 
     public boolean isClasseEconomica(){
-        if(this.classe == "economica"){
+        if(this.classe.equals("economica")){
             return true;
         }else{
             return false;
@@ -24,7 +23,7 @@ public class Bilhete  {
     }
 
     public boolean isPromocional(){
-        if(this.classe == "promocional"){
+        if(this.classe.equals("promocional")){
             return true;
         }else{
             return false;
