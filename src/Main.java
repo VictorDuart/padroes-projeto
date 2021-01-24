@@ -22,7 +22,7 @@ public class Main {
 
         pontosCalculados = calculo.calcularPontuacao(passageiro);
 
-        System.out.println("Passageiro: "+passageiro.nome+"\nPontuação dos voos pendentes: "+pontosCalculados+"\nPontuação atual: " +
+        System.out.println("\nPassageiro: "+passageiro.nome+"\nPontuação dos voos pendentes: "+pontosCalculados+"\nPontuação atual: " +
                 passageiro.pontuacao);
     }
 

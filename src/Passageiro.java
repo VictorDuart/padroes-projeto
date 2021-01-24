@@ -35,7 +35,7 @@ public class Passageiro {
 
         String classe;
 
-        System.out.println("Insira a classe o voo "+numeroVoo+" (primeira, economica, promocional): \n");
+        System.out.println("Insira a classe do voo "+numeroVoo+" (primeira, economica, promocional): \n");
         classe = ler.next();
 
         Bilhete bilhete = new Bilhete(classe);

@@ -7,9 +7,9 @@ public class Calculo {
         List<Voo> voosPendentes = passageiro.getVoosComPontuacaoPendente();
 
         for(Voo voo:voosPendentes){
-            Bilhete bilhete = new Bilhete("economica");
-            escolheEstrategia escolheEstrategia = new escolheEstrategia(bilhete);
-            EstrategiaDePontuacao estrategia = escolheEstrategia.getEstrategiaDePontuacao(passageiro.isDiamante());
+            Bilhete bilhete = passageiro.getBilhete(voo.numero);
+            escolheEstrategia escolhe = new escolheEstrategia(bilhete);
+            EstrategiaDePontuacao estrategia = escolhe.getEstrategiaDePontuacao(passageiro.isDiamante());
             totalDePontos += estrategia.calcularPontuacao(voo.getDistancia());
         }
 
